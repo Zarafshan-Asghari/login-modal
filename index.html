@@ -6,8 +6,34 @@
     <title>Login modal</title>
     <script src="./tailwind.config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet
+    "
+    />
+    <script>
+      tailwind.cofig = {
+        them: {
+          fontFamily: {
+            sans: ["Mulish", "sans-serif"],
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <h1 class="text-red-400">hello</h1>
+    <!-- global container -->
+    <div class="flex items-center justify-center min-h-screen bg-rose-50">
+      <!-- container -->
+      <div
+        class="relative flex flex-col m-6 md:flex-row space-y-10 md:space-y-0 bg-white shadow-xl rounded-xl"
+      >
+        <!-- left side -->
+        <div class="p-6 md:p-20"></div>
+      </div>
+    </div>
   </body>
 </html>
