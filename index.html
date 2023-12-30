@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login modal</title>
-    <script src="./tailwind.config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <link rel="stylesheet" href="
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,16 +29,80 @@
       };
     </script>
   </head>
-  <body>
+  <body
+    id="body"
+    class="body bg-cover bg-no-repeat bg-center flex items-center justify-center min-h-screen"
+    style="
+      background-image: url('./img/joanna-kosinska-qs2tzPZo-G8-unsplash.jpg');
+    "
+  >
     <!-- global container -->
-    <div class="flex items-center justify-center min-h-screen bg-rose-50">
-      <!-- container -->
-      <div
-        class="relative flex flex-col m-6 md:flex-row space-y-10 md:space-y-0 bg-white shadow-xl rounded-xl"
+    <div
+      class="w-[380px] mx-5 md:w-[420px] bg-transparent backdrop-blur-[20px] shadow-xl px-5 py-10 text-white rounded-xl border border-customColor"
+    >
+      <h1
+        class="text-center mb-8 font-mono capitalize text-3xl font-weight-600"
       >
-        <!-- left side -->
-        <div class="p-6 md:p-20"></div>
+        login
+      </h1>
+      <div class="flex flex-col space-y-6 mb-4">
+        <!-- input user name -->
+        <div
+          class="flex items-center justify-between border border-customColor rounded-[40px] px-2"
+        >
+          <input
+            type="text"
+            placeholder="User Name"
+            required
+            class="focus:outline-none p-2 bg-transparent placeholder:font-thin placeholder:text-sm"
+          />
+
+          <!-- icon -->
+          <ion-icon name="person" class="w-6 h-6 mr-2"></ion-icon>
+        </div>
+        <!-- input password -->
+
+        <div
+          class="flex items-center justify-between border border-customColor rounded-[40px] px-2"
+        >
+          <input
+            type="password"
+            placeholder="password"
+            required
+            class="focus:outline-none p-2 bg-transparent placeholder:font-thin placeholder:text-sm"
+          />
+
+          <!-- icon -->
+          <ion-icon name="lock" class="w-6 h-6 mr-2"></ion-icon>
+        </div>
+      </div>
+      <!-- remember  and forgot  -->
+      <div class="flex items-center justify-between px-2 mb-4">
+        <!-- remmber -->
+        <div class="flex space-x-2">
+          <input type="checkbox" checked class="focus:outline-none" />
+          <p class="capitalize text-sm font-thin">remmber me</p>
+        </div>
+        <!-- forgot password -->
+        <div>
+          <a href="#" class="capitalize font-thin text-sm">forgot password</a>
+        </div>
+      </div>
+
+      <!-- login btn -->
+      <div class="flex items-center justify-center mb-4 group">
+        <button
+          class="bg-white text-slate-900 font-serif font-medium w-full p-2 text-center rounded-full capitalize shadow-inset-0-red transition-all duration-300 hover:bg-transparent ease-in-out border border-customColor group-hover:text-white hover:transform hover:-translate-y-0.5"
+        >
+          login
+        </button>
+      </div>
+      <!-- regester -->
+      <div class="flex items-center justify-center space-x-4">
+        <p class="capitalize font-thin text-sm">don't have account ?</p>
+        <a href="#" class="capitalize font-semibold">register</a>
       </div>
     </div>
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>
